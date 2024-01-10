@@ -12,12 +12,12 @@ function App() {
 
   return (
     <div className="menu-container">
-      <h1 className='text-5xl menu-title'>New Rajshree Sweets Menu</h1>
+      <h1 className='text-3xl text-gray-700 menu-title'>New Rajshree Sweets Menu</h1>
       {Object.keys(Menu).map((category) => (
         <React.Fragment key={category}>
           <div className="category-container">
             <div className={`bg-rose-600 hover:bg-rose-700 text-white category-title-wrapper ${showMenu[category] ? 'active' : ''}`} onClick={() => toggleMenu(category)}>
-              <h1 className='text-2xl category-title'>{category}</h1>
+              <h1 className='text-s category-title'>{category}</h1>
               <FontAwesomeIcon icon={showMenu[category] ? faCaretDown : faCaretRight} className='caret' />
             </div>
             <div className="items-container">

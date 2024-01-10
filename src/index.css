@@ -65,17 +65,3 @@ body {
 .item-wrapper:hover {
   scale: 1.01;
 }
-
-@media (max-width: 600px) {
-  .menu-container {
-    padding: 10px;
-  }
-
-  .category-title {
-    font-size: 1.2em;
-  }
-
-  .menu-item {
-    font-size: 0.9em;
-  }
-}
