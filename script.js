@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const categoryTitle = document.createElement('h3');
         categoryTitle.className = 'category-title';
         categoryTitle.onclick = () => {
-            console.log('clicked');
             menuItemsContainer.classList.toggle('inactive');
         }
         categoryTitle.textContent = category;
