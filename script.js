@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         categoryTitle.textContent = category;
 
         const menuItemsContainer = document.createElement('div');
-        menuItemsContainer.className = 'menu-items-container';
+        menuItemsContainer.className = 'menu-items-container inactive';
 
         const items = menu[category];
         items.forEach((item, index) => {
