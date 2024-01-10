@@ -1,5 +1,5 @@
 const menu = {
-    "Chena Items": [
+    "Chhena Items": [
         {
             "name": "Kala Jamun",
             "rate": 560
@@ -29,31 +29,31 @@ const menu = {
             "rate": 560
         },
         {
-            "name": "Chena Sandwich",
+            "name": "Chhena Sandwich",
             "rate": 560
         },
         {
-            "name": "Chena Roll",
+            "name": "Chhena Roll",
             "rate": 560
         },
         {
-            "name": "Chena Phool",
+            "name": "Chhena Phool",
             "rate": 560
         },
         {
-            "name": "Chena Chap",
+            "name": "Chhena Chap",
             "rate": 560
         },
         {
             "name": "Mix Snacks",
             "rate": 70
         },
+    ],
+    "Chhena Sweets per Piece": [
         {
             "name": "Chhena Roll",
             "rate": 60
         },
-    ],
-    "Chhena Sweets per Piece": [
         {
             "name": "Rasgulla",
             "rate": 20
@@ -731,7 +731,7 @@ const menu = {
             "rate": 0
         },
         {
-            "name": "Chena Mix",
+            "name": "Chhena Mix",
             "rate": 560
         },
         {
@@ -1005,7 +1005,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         items.forEach((item, index) => {
             const menuItem = document.createElement('div');
             menuItem.className = 'menu-item';
-            menuItem.innerHTML = `<strong>${item.name}</strong> - ₹ ${item.rate}`;
+            menuItem.innerHTML = `<strong>${item.name}</strong><span> ₹ ${item.rate}</span>`;
 
             // Add alternate card styling
             if (index % 2 === 1) {

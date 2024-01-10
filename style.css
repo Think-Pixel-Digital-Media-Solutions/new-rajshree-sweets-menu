@@ -33,12 +33,14 @@ body {
 
 .menu-item {
     margin-bottom: 8px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-item.alternate {
