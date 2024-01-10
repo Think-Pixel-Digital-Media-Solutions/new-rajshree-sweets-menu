@@ -5,23 +5,23 @@ const menu = {
             "rate": 560
         },
         {
-            "name": "Kala Jamun",
+            "name": "Rasmadhuri",
             "rate": 560
         },
         {
-            "name": "Kala Jamun",
+            "name": "Manchali",
             "rate": 560
         },
         {
-            "name": "Kala Jamun",
+            "name": "Kheer Kadam",
             "rate": 560
         },
         {
-            "name": "Kala Jamun",
+            "name": "Kheer Mohan",
             "rate": 560
         },
         {
-            "name": "Kala Jamun",
+            "name": "Chamcham",
             "rate": 560
         },
         {
@@ -35,9 +35,7 @@ const menu = {
         {
             "name": "Chena Roll",
             "rate": 560
-        }
-    ],
-    "Chhena Sweets per Piece": [
+        },
         {
             "name": "Chena Phool",
             "rate": 560
@@ -54,6 +52,8 @@ const menu = {
             "name": "Chhena Roll",
             "rate": 60
         },
+    ],
+    "Chhena Sweets per Piece": [
         {
             "name": "Rasgulla",
             "rate": 20
