@@ -15,7 +15,7 @@ body {
     max-width: 800px;
     margin: 0px auto;
     padding: 20px;
-    background-color: #FFD731;
+    background-color: #fbbf24;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .category-title {
-    background-color: #E82F33;
+    background-color: #e11d48;
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
@@ -36,7 +36,7 @@ body {
 }
 
 .category-title:hover {
-    background-color: #C21E22;
+    background-color: #be123c;
 }
 
 .menu-item {
