@@ -35,6 +35,10 @@ body {
     cursor: pointer;
 }
 
+.category-title:hover {
+    background-color: #C21E22;
+}
+
 .menu-item {
     margin-bottom: 8px;
     padding: 10px 20px;
