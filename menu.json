@@ -49,7 +49,7 @@
 			"rate": 560
 		}
 	],
-	"Chhena Sweets per Piece": [
+	"Chhena Sweets(per piece)": [
 		{
 			"name": "Chhena Cup",
 			"rate": 60
@@ -339,7 +339,7 @@
 			"rate": 580
 		}
 	],
-	"KULFI & COLD ITEMS": [
+	"Kulfi & Cold Items": [
 		{
 			"name": "Badam Milk Shake",
 			"rate": 100
@@ -851,7 +851,7 @@
 			"rate": 560
 		}
 	],
-	"SHAGUN SPECIAL": [
+	"Shagun Special": [
 		{
 			"name": "1 Pcs Laddu Special Box",
 			"rate": 0
