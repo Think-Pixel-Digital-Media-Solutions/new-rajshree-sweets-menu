@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/new-rajshree-sweets-menu/static/css/main.77cb1519.css",
+    "main.js": "/new-rajshree-sweets-menu/static/js/main.23c7f76f.js",
+    "static/media/watermark.png": "/new-rajshree-sweets-menu/static/media/watermark.ae4a43a4bf577976fa13.png",
+    "index.html": "/new-rajshree-sweets-menu/index.html",
+    "main.77cb1519.css.map": "/new-rajshree-sweets-menu/static/css/main.77cb1519.css.map",
+    "main.23c7f76f.js.map": "/new-rajshree-sweets-menu/static/js/main.23c7f76f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77cb1519.css",
+    "static/js/main.23c7f76f.js"
+  ]
+}
