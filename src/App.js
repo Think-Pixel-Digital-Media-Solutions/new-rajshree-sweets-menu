@@ -12,7 +12,12 @@ function App() {
 
   return (
     <div className="menu-container">
-      <h1 className='text-3xl text-gray-700 menu-title'>New Rajshree Sweets Menu</h1>
+      <h1 className='text-3xl font-bold menu-title'>NEW RAJSHREE SWEETS PRIVATE LIMITED</h1>
+      <p className='text-2xl font-bold'>S 6/109-110 ORDERLY BAZAR ROAD</p>
+      <p className='text-2xl font-bold'>GOLGHAR KACHAHARI,VARANASI-221002</p>
+      <p className='text-xl mt-5'><span className='font-bold'>FSSAI LIC NO:</span> 12714038000517</p>
+      <p className='text-xl'><span className='font-bold'>Phone:</span> 0542-2504477</p>
+      <p className='text-xl'><span className='font-bold'>Email:</span> newrajshreesweets@yahoo.in</p>
       {Object.keys(Menu).map((category) => (
         <React.Fragment key={category}>
           <div className="category-container">
@@ -24,7 +29,9 @@ function App() {
               {Menu[category].map((item, index) => (
                 <div key={index} className={`item-wrapper ${index % 2 === 0 ? 'alternate' : ''}`} >
                   <span className='item-title'>{item.name}</span>
-                  <span className='item-rate'><FontAwesomeIcon icon={faIndianRupeeSign} /> {item.rate}</span>
+                  <span className='item-rate'>
+                    {item.rate && <FontAwesomeIcon icon={faIndianRupeeSign} />} {item.rate}
+                  </span>
                 </div>
               ))}
             </div>
