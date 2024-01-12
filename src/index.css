@@ -18,6 +18,8 @@ body {
   background-color: #fbbf24;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  background-image: url('../public/watermark.png');
+  background-repeat: repeat;
 }
 
 .category-container {
