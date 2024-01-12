@@ -2,56 +2,52 @@
 	"Chhena Sweets {Kg}": [
 		{
 			"name": "Chamcham",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Chhena Chap",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Chhena Phool",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Chhena Roll",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Chhena Sandwich",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Kala Jamun",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Kheer Kadam",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Kheer Mohan",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Malai Rasmadhuri",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Manchali",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Rasmadhuri",
-			"rate": "560.00"
+			"rate": "60.00"
 		}
 	],
 	"Chhena Sweets {Piece}": [
 		{
 			"name": "Chhena Cup",
-			"rate": "60.00"
-		},
-                {
-			"name": "Chhena Roll",
 			"rate": "60.00"
 		},
 		{
@@ -90,143 +86,143 @@
 	"Desi Ghee Sweets": [
 		{
 			"name": "Alsi Laddoo",
-			"rate": "750.00"
+			"rate": "50.00"
 		},
 		{
 			"name": "Balu Shahi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Bari Bundi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Battisha",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Besan Laddoo",
-			"rate": "520.00"
+			"rate": "20.00"
 		},
 		{
 			"name": "Bundi Laddoo",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Chana Bite",
-			"rate": "700.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Chana Mewa Laddoo",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Chandra Kala",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Coconut Laddoo",
-			"rate": "700.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Feni",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Ghevar Malai",
-			"rate": "650.00"
+			"rate": "50.00"
 		},
 		{
 			"name": "Ghevar Sada",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Gond Laddoo",
-			"rate": "780.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Hara Mewa Laddoo",
-			"rate": "750.00"
+			"rate": "50.00"
 		},
 		{
 			"name": "Imarti",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Irani Laddoo",
-			"rate": "650.00"
+			"rate": "50.00"
 		},
 		{
 			"name": "Jodhpuri Laddoo",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khurma",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Lachha Sohan Papdi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Laung Latta",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Magdal",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Maysore Pak",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Mini Gujhiya",
-			"rate": "680.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Moong Mewa Laddoo",
-			"rate": "780.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Navratan Gujhiya",
-			"rate": "620.00"
+			"rate": "20.00"
 		},
 		{
 			"name": "Navratan Laddoo",
-			"rate": "780.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Pinni",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Rasili Potli",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Sadi Gujhiya",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Sohan Halwa Mawa",
-			"rate": "650.00"
+			"rate": "50.00"
 		},
 		{
 			"name": "Sohan Roll",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Sonth Laddoo",
-			"rate": "1000.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Sugar Free Gujhiya",
-			"rate": "780.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Tirangi Gujhiya",
-			"rate": "620.00"
+			"rate": "20.00"
 		}
 	],
 	"Dryfruits": [
@@ -274,561 +270,561 @@
 	"Gajak ": [
 		{
 			"name": "Chocolate Gajak",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Gajak Biscuit",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Gajak Cone",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Gajak Gujhiya",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Gajak Roll",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Moongfali Chikki",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Orange Gajak",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Til Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Til Chikki",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Til Gajak",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Til Laddoo",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Tilbugga",
-			"rate": "580.00"
+			"rate": "80.00"
 		}
 	],
 	"Halwa Sweets": [
 		{
 			"name": "Badam Halwa",
-			"rate": "1000.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Gajar Halwa",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Moong Halwa",
-			"rate": "580.00"
+			"rate": "80.00"
 		}
 	],
 	"Kulfi & Cold Items": [
 		{
 			"name": "Badam Milk Shake",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Keshariya Kulfi",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Keshariya Kulfi Pack",
-			"rate": "110.00"
+			"rate": "10.00"
 		},
 		{
 			"name": "Rabdi Kulfi",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Rabdi Kulfi Pack",
-			"rate": "110.00"
+			"rate": "10.00"
 		}
 	],
 	"Kaju Dryfruits Sweets": [
 		{
 			"name": "Akhrot Barfi",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Anjeer Roll",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Anjir Gilori",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Anjir Gujiya",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Badam Barfi",
-			"rate": "1100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Badshah Basant",
-			"rate": "2000.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Fruit Laddoo",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Gulab Chikki",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Gulab Mewa Laddoo",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Anjir Barfi",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Barfi",
-			"rate": "960.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Kaju Biscuit",
-			"rate": "1000.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Kaju Choclate Laddoo",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Chocolate Bite",
-			"rate": "1200.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Kaju Diamond",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Diya",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Gujhia",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Gulkand",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Jalebi",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Kadam",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Kalash",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Kamal",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Keshar",
-			"rate": "980.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Kaju Keshar Pista Barfi",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Khaskhas",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Lemon",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Mango",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Mewa Bite",
-			"rate": "1200.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Kaju Navrang",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Orange Sohan Halwa",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Phool",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Rose",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Samosa",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Sohan Halwa",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Star",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Sunflower",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Kaju Tirangi Barfi",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Khajur Laddoo",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Malai Cake",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Malai Fruiti",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Malai Gilori",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Malai Sandwich",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Mewa Chikki",
-			"rate": "1240.00"
+			"rate": "40.00"
+		},
+		{
+			"name": "Mix Chikki",
+			"rate": "40.00"
 		},
 		{
 			"name": "Pista Badshah Basant",
-			"rate": "2500.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Pista Barfi",
-			"rate": "4000.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Pista Cone",
-			"rate": "2500.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Pista Gillori",
-			"rate": "2500.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Pista Roll",
-			"rate": "300.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Pizzi Barfi",
-			"rate": "1240.00"
+			"rate": "40.00"
 		}
 	],
 	"Khowa Sweets": [
 		{
 			"name": "Badam Bahar Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Basant Bahar",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Chocolate Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Dil Bahar Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Dil Khush Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Doda Barfi",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Dudhiya Barfi",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Elaichi Peda",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Kalakand",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Karachi Halwa",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Karam Shahi Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Keshar Peda",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Khowa Cutlet",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Gilori",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Kadam",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Khinni",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Mewa Laddoo",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Parwal",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Plain Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Roll A",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khowa Roll B",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Lal Peda",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Lauki Mewa Laddoo",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Madhumati",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Malai Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Malpua",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Mathura Peda",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Milk Cake",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Milk Pudding",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Moti Pag Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Nariyal Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Punjab Bahar",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Radhapriya Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Raj Bahar",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Safed Peda",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Sandesh Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Sheesh Bahar",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Tirangi Barfi",
-			"rate": "580.00"
+			"rate": "80.00"
 		}
 	],
 	"Mix Sweets": [
 		{
 			"name": "Chhena Mix",
-			"rate": "560.00"
-		},
-                {
-			"name": "Chikki Mix",
-			"rate": "1240.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Kaju Mix",
-			"rate": "1240.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Khowa Mix",
-			"rate": "580.00"
+			"rate": "80.00"
 		}
 	],
 	"Namkeen": [
 		{
 			"name": "Achari Mathri",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Choora Namkeen",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Hari Namkeen",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Kaju Masala",
-			"rate": "1300.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Kaju Salted",
-			"rate": "1300.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Karela Namkeen",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Khasta",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Lachha Badam Namkeen",
-			"rate": "1300.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Makhan Bari",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Masoor Namkeen",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Matri Namkeen",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Mewa Falahari Namkeen",
-			"rate": "800.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Namakpara",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Namkeen Bhujiya",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Navratan Namkeen",
-			"rate": "600.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Samosi Namkeen",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Sem Beej",
-			"rate": "1300.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Sohal",
-			"rate": "580.00"
+			"rate": "80.00"
 		}
 	],
 	"Petha Sweets": [
 		{
 			"name": "Angoori Petha",
-			"rate": "540.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Parwal",
-			"rate": "560.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Petha",
-			"rate": "460.00"
+			"rate": "60.00"
 		},
 		{
 			"name": "Petha Gareri",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Petha Gilori",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Petha Roll",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Santra Barfi",
-			"rate": "560.00"
+			"rate": "60.00"
 		}
 	],
 	"Shagun Special": [
@@ -850,29 +846,29 @@
 		},
 		{
 			"name": "Khaja",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Meetha Math",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Namkeen Math",
-			"rate": "580.00"
+			"rate": "80.00"
 		},
 		{
 			"name": "Sada Math",
-			"rate": "580.00"
+			"rate": "80.00"
 		}
 	],
 	"Snacks": [
 		{
 			"name": "Basket Chaat",
-			"rate": "140.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Bhalla Papri",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Chhola Samosa",
@@ -884,15 +880,15 @@
 		},
 		{
 			"name": "Dahi Bada",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Dahi Bhalla",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Dahi Tikki",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Half Dahi Bhalla",
@@ -912,11 +908,11 @@
 		},
 		{
 			"name": "Matar Tikki",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Palak Chaat",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Paneer Patties",
@@ -924,7 +920,7 @@
 		},
 		{
 			"name": "Papri Chaat",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Plain Dhokla",
@@ -932,11 +928,11 @@
 		},
 		{
 			"name": "Ragda Patties",
-			"rate": "100.00"
+			"rate": "00.00"
 		},
 		{
 			"name": "Raj Kachauri",
-			"rate": "140.00"
+			"rate": "40.00"
 		},
 		{
 			"name": "Samosa",
@@ -952,7 +948,7 @@
 		},
 		{
 			"name": "Sonth Papdi Chaat",
-			"rate": "100.00"
+			"rate": "00.00"
 		}
 	]
 }
