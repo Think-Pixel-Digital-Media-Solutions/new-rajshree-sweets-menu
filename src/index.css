@@ -9,17 +9,16 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: #fbbf24;
+  background-image: url('../public/watermark.png');
+  background-repeat: repeat;
 }
 
 .menu-container {
   max-width: 800px;
   margin: 0px auto;
   padding: 20px;
-  background-color: #fbbf24;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  background-image: url('../public/watermark.png');
-  background-repeat: repeat;
 }
 
 .category-container {
