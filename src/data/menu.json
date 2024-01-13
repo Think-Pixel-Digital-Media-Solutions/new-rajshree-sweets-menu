@@ -1,5 +1,5 @@
 {
-	"Chhena Sweets {Kg}": [
+	"Chhena Sweets (Kg)": [
 		{
 			"name": "Chamcham",
 			"rate": "560.00"
@@ -45,12 +45,12 @@
 			"rate": "560.00"
 		}
 	],
-	"Chhena Sweets {Piece}": [
+	"Chhena Sweets (Piece)": [
 		{
 			"name": "Chhena Cup",
 			"rate": "60.00"
 		},
-                {
+		{
 			"name": "Chhena Roll",
 			"rate": "60.00"
 		},
@@ -714,7 +714,7 @@
 			"name": "Chhena Mix",
 			"rate": "560.00"
 		},
-                {
+		{
 			"name": "Chikki Mix",
 			"rate": "1240.00"
 		},
