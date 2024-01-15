@@ -66,7 +66,7 @@ body {
 
 .items-container {
   display: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .category-title-wrapper.active~.items-container {
