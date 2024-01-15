@@ -1,7 +1,7 @@
 {
   "name": "new-rajshree-sweets-menu",
   "version": "0.1.0",
-  "homepage": "https://New-Rajshree-Sweets-Private-Limited.github.io/new-rajshree-sweets-menu",
+  "homepage": "https://menu.rajshreesweets.com/",
   "main": "index.jsx",
   "private": true,
   "dependencies": {
