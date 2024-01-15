@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/new-rajshree-sweets-menu/static/css/main.bbffea0c.css",
-    "main.js": "/new-rajshree-sweets-menu/static/js/main.92d7558f.js",
-    "static/media/watermark.png": "/new-rajshree-sweets-menu/static/media/watermark.41de24091da7af53004d.png",
+    "main.css": "/new-rajshree-sweets-menu/static/css/main.1521b7d9.css",
+    "main.js": "/new-rajshree-sweets-menu/static/js/main.d6a042a1.js",
+    "static/media/logo.png": "/new-rajshree-sweets-menu/static/media/logo.4454200259a1d41bd8b2.png",
     "index.html": "/new-rajshree-sweets-menu/index.html",
-    "main.bbffea0c.css.map": "/new-rajshree-sweets-menu/static/css/main.bbffea0c.css.map",
-    "main.92d7558f.js.map": "/new-rajshree-sweets-menu/static/js/main.92d7558f.js.map"
+    "main.1521b7d9.css.map": "/new-rajshree-sweets-menu/static/css/main.1521b7d9.css.map",
+    "main.d6a042a1.js.map": "/new-rajshree-sweets-menu/static/js/main.d6a042a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbffea0c.css",
-    "static/js/main.92d7558f.js"
+    "static/css/main.1521b7d9.css",
+    "static/js/main.d6a042a1.js"
   ]
 }
