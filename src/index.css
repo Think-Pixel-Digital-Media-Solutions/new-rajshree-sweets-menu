@@ -42,11 +42,19 @@ body {
   color: #FFF;
 }
 
+.category-title {
+  text-align: left;
+}
+
+.item-title {
+  text-align: left;
+}
+
 .category-title-wrapper {
   padding: 10px 20px;
   margin-bottom: 10px;
   border-radius: 8px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
   cursor: pointer;
   display: flex;
