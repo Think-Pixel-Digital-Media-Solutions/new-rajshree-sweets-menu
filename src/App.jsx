@@ -22,7 +22,7 @@ function App() {
         <p className='text-l'><span className='font-bold'>GSTIN :</span> 09AAHCN9500A1ZP</p>
         <p className='text-l'><span className='font-bold'>FSSAI LIC NO :</span> 12714038000517</p>
         <p className='text-l'><span className='font-bold'>Phone :</span> 0542-2504477</p>
-        <p className='text-l'><span className='font-bold'>Email :</span> newrajshreesweetsprivatelimited@yahoo.com</p>
+        <p className='text-l'><span className='font-bold'>Email :</span> contact@newrajshreesweets.com</p>
       </div>
       {Object.keys(Menu).map((category) => (
         <React.Fragment key={category}>
