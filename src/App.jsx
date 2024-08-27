@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="menu-container">
       <div className="misc-details">
-        <img src={require('./assets/logo.webp')} alt='logo' className='logo' />
+        <img src={require('./assets/logo.png')} alt='logo' className='logo' />
         <h1 className='text-2xl font-bold menu-title mb-3'>NEW RAJSHREE SWEETS PRIVATE LIMITED</h1>
         <p className='text-xl font-bold'>S 6/109-110 ORDERLY BAZAR ROAD</p>
         <p className='text-xl font-bold'>GOLGHAR KACHAHARI</p>
