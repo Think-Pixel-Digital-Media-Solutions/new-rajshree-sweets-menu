@@ -1,0 +1,5 @@
+# Rules for menu subdomain
+User-agent: *
+Disallow: /
+
+Host: menu.newrajshreesweets.com
