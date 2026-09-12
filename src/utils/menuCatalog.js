@@ -10,6 +10,13 @@ export const ASSETS_URL = 'https://assets.newrajshreesweets.com';
 export const SHOP_URL = 'https://www.newrajshreesweets.com/shop';
 export const HAMPERS_URL = 'https://www.newrajshreesweets.com/hampers';
 
+export const CONTACT_PHONE = '+91-9792677770';
+export const WHATSAPP_NUMBER = '919792677770';
+export const STORE_ADDRESS = 'S 6/109-110 Orderly Bazar Road, Golghar Kachahari, Varanasi - 221002';
+export const MAPS_URL = 'https://maps.google.com/?q=S%206%2F109-110%20Orderly%20Bazar%20Road%20Golghar%20Kachahari%20Varanasi%20221002';
+export const STORE_EMAIL = 'newrajshreesweetspvtltd@gmail.com';
+export const WEBSITE_URL = 'https://newrajshreesweets.com';
+
 const PAGE_SIZE = 100;
 const MENU_VISIBLE_STATUSES = new Set(['IN_STOCK', 'OUT_OF_STOCK']);
 
@@ -31,6 +38,14 @@ export function compareNames(a, b) {
 
 export function formatPrice(value) {
   return `₹${Number(value || 0).toLocaleString('en-IN')}`;
+}
+
+export function buildWhatsAppLink(item = null) {
+  let message = 'Hello New Rajshree Sweets, I am browsing your online menu and would like to inquire.';
+  if (item && item.name) {
+    message = `Hello New Rajshree Sweets! I am interested in ordering: *${item.name}* (${item.priceLabel}${item.quantityType ? ` / ${item.quantityType}` : ''}). Could you please share availability and ordering details?`;
+  }
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
 function encodeAssetSegment(value) {
@@ -74,11 +89,12 @@ function variantDisplayName(productName, variant) {
 
 function toMenuItem(product, { variant = null, price, priceLabel, categoryName } = {}) {
   const isHamper = Boolean(product.isHamper || product.options?.hamper || variant);
+  const cleanCat = String(categoryName || '').trim();
 
   return {
     id: variant
       ? `${product.id || product.name}-${variant.id}`
-      : product.id || `${categoryName}-${product.name}`,
+      : product.id || `${cleanCat}-${product.name}`,
     name: variant ? variantDisplayName(product.name, variant) : product.name,
     price,
     priceLabel,
@@ -88,7 +104,11 @@ function toMenuItem(product, { variant = null, price, priceLabel, categoryName }
     variantId: variant?.id || null,
     description: product.description || '',
     ingredients: product.options?.hamper?.ingredients || [],
-    shopHref: isHamper ? HAMPERS_URL : SHOP_URL
+    shopHref: isHamper ? HAMPERS_URL : SHOP_URL,
+    tag: product.tag || (product.isFeaturedProduct ? 'Featured' : null),
+    isFeatured: Boolean(product.isFeaturedProduct),
+    isDeliverable: product.isDeliverable !== false,
+    categoryName: cleanCat
   };
 }
 
@@ -96,9 +116,9 @@ export function normalizeApiProducts(products = []) {
   return products.reduce((acc, product) => {
     if (!isVisibleMenuProduct(product)) return acc;
 
-    const categoryName = product.isHamper
+    const categoryName = (product.isHamper
       ? 'Hampers'
-      : product.ProductCategory?.name || 'Signature Sweets';
+      : product.ProductCategory?.name || 'Signature Sweets').trim();
     if (!acc[categoryName]) acc[categoryName] = [];
 
     const hamperOptions = product.options?.hamper;
@@ -133,7 +153,8 @@ export function normalizeApiProducts(products = []) {
 }
 
 export function normalizeLocalMenu(menu) {
-  return Object.entries(menu).reduce((acc, [categoryName, items]) => {
+  return Object.entries(menu).reduce((acc, [categoryNameRaw, items]) => {
+    const categoryName = String(categoryNameRaw || '').trim();
     acc[categoryName] = items.map((item, index) => ({
       id: `${categoryName}-${item.name}-${index}`,
       name: item.name,
@@ -145,7 +166,11 @@ export function normalizeLocalMenu(menu) {
       variantId: null,
       description: '',
       ingredients: [],
-      shopHref: SHOP_URL
+      shopHref: SHOP_URL,
+      tag: null,
+      isFeatured: false,
+      isDeliverable: true,
+      categoryName
     }));
 
     return acc;
