@@ -784,36 +784,40 @@ function App() {
                           className="list-row-item"
                           onClick={() => setSelectedItem(item)}
                         >
-                          <div className="list-media-thumb">
-                            <MenuItemImage
-                              productName={item.imageName}
-                              variantId={item.variantId}
-                              alt={item.name}
-                              className="list-thumb-img"
-                            />
+                          {/* Col 1: Thumbnail + Title + Veg Mark */}
+                          <div className="table-col-item">
+                            <div className="list-media-thumb">
+                              <MenuItemImage
+                                productName={item.imageName}
+                                variantId={item.variantId}
+                                alt={item.name}
+                                className="list-thumb-img"
+                              />
+                            </div>
+
+                            <div className="list-info-main">
+                              <div className="list-title-row">
+                                <VegBadge />
+                                <h3 className="list-title">{item.name}</h3>
+                                {item.tag && <span className="list-tag">{item.tag}</span>}
+                              </div>
+                              <div className="list-meta-mobile">
+                                {item.shelfLife ? (
+                                  <span>{item.shelfLife} days shelf life</span>
+                                ) : (
+                                  <span>Fresh Daily</span>
+                                )}
+                                <span> • </span>
+                                <span>{item.quantityType || 'unit'}</span>
+                              </div>
+                            </div>
                           </div>
 
-                          <div className="list-info-main">
-                            <div className="list-title-row">
-                              <VegBadge />
-                              <h3 className="list-title">{item.name}</h3>
-                              {item.tag && <span className="list-tag">{item.tag}</span>}
-                            </div>
-                            <div className="list-meta-mobile">
-                              {item.shelfLife ? (
-                                <span>{item.shelfLife} days shelf life</span>
-                              ) : (
-                                <span>Fresh Daily</span>
-                              )}
-                              <span> • </span>
-                              <span>{item.quantityType || 'unit'}</span>
-                            </div>
-                          </div>
-
-                          <div className="list-meta-col">
+                          {/* Col 2: Shelf Life & Unit */}
+                          <div className="table-col-shelf">
                             <span className="table-shelf-badge">
                               <FontAwesomeIcon icon={faClock} />
-                              {item.shelfLife ? `${item.shelfLife} days` : 'Fresh Daily'}
+                              {item.shelfLife ? `${item.shelfLife} days shelf life` : 'Fresh Daily'}
                             </span>
                             <span className="table-unit-badge">
                               {item.quantityType?.toLowerCase() === 'kg'
@@ -824,18 +828,20 @@ function App() {
                             </span>
                           </div>
 
-                          <div className="list-price-action" onClick={(e) => e.stopPropagation()}>
-                            <div className="list-price-text">
-                              <strong>{item.priceLabel}</strong>
-                              <small>
-                                {item.quantityType?.toLowerCase() === 'kg'
-                                  ? '/ kg'
-                                  : item.quantityType?.toLowerCase() === 'piece'
-                                  ? '/ pc'
-                                  : ''}
-                              </small>
-                            </div>
+                          {/* Col 3: Rate */}
+                          <div className="table-col-price">
+                            <strong>{item.priceLabel}</strong>
+                            <small>
+                              {item.quantityType?.toLowerCase() === 'kg'
+                                ? '/ kg'
+                                : item.quantityType?.toLowerCase() === 'piece'
+                                ? '/ pc'
+                                : ''}
+                            </small>
+                          </div>
 
+                          {/* Col 4: Action */}
+                          <div className="table-col-action" onClick={(e) => e.stopPropagation()}>
                             <a
                               href={item.shopHref || SHOP_URL}
                               target="_blank"
