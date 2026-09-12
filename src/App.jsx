@@ -120,8 +120,21 @@ function App() {
   const [query, setQuery] = useState('');
   const [activeTag, setActiveTag] = useState('ALL');
   const [sortBy, setSortBy] = useState('DEFAULT');
-  const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'list'
   const [sourceLabel, setSourceLabel] = useState('Live menu');
+  const [viewMode, setViewMode] = useState(() => {
+    try {
+      return localStorage.getItem('nrspl_menu_view_mode') || 'list';
+    } catch {
+      return 'list';
+    }
+  });
+
+  const changeViewMode = (mode) => {
+    setViewMode(mode);
+    try {
+      localStorage.setItem('nrspl_menu_view_mode', mode);
+    } catch {}
+  };
   const [selectedItem, setSelectedItem] = useState(null);
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -566,23 +579,23 @@ function App() {
               <div className="view-mode-switch" role="group" aria-label="Layout view mode">
                 <button
                   type="button"
+                  className={`view-btn ${viewMode === 'list' ? 'active' : ''}`}
+                  onClick={() => changeViewMode('list')}
+                  title="Table / Rate List View (Default)"
+                  aria-label="Table / Rate List View"
+                  aria-pressed={viewMode === 'list'}
+                >
+                  <FontAwesomeIcon icon={faListUl} />
+                </button>
+                <button
+                  type="button"
                   className={`view-btn ${viewMode === 'grid' ? 'active' : ''}`}
-                  onClick={() => setViewMode('grid')}
+                  onClick={() => changeViewMode('grid')}
                   title="Grid Card View"
                   aria-label="Grid Card View"
                   aria-pressed={viewMode === 'grid'}
                 >
                   <FontAwesomeIcon icon={faTableCellsLarge} />
-                </button>
-                <button
-                  type="button"
-                  className={`view-btn ${viewMode === 'list' ? 'active' : ''}`}
-                  onClick={() => setViewMode('list')}
-                  title="Compact Rate List View"
-                  aria-label="Compact Rate List View"
-                  aria-pressed={viewMode === 'list'}
-                >
-                  <FontAwesomeIcon icon={faListUl} />
                 </button>
               </div>
             </div>
@@ -755,65 +768,88 @@ function App() {
                     ))}
                   </div>
                 ) : (
-                  /* Compact List View */
-                  <div className="items-list-view">
-                    {items.map((item) => (
-                      <article
-                        key={item.id}
-                        className="list-row-item"
-                        onClick={() => setSelectedItem(item)}
-                      >
-                        <div className="list-media-thumb">
-                          <MenuItemImage
-                            productName={item.imageName}
-                            variantId={item.variantId}
-                            alt={item.name}
-                            className="list-thumb-img"
-                          />
-                        </div>
+                  /* Table / Rate List View */
+                  <div className="items-table-container">
+                    <div className="table-header-strip" aria-hidden="true">
+                      <span className="th-item">Delicacy / Sweets</span>
+                      <span className="th-shelf">Freshness &amp; Shelf Life</span>
+                      <span className="th-price">Rate</span>
+                      <span className="th-action">Order</span>
+                    </div>
 
-                        <div className="list-info-main">
-                          <div className="list-title-row">
-                            <VegBadge />
-                            <h3 className="list-title">{item.name}</h3>
-                            {item.tag && <span className="list-tag">{item.tag}</span>}
+                    <div className="items-list-view">
+                      {items.map((item) => (
+                        <article
+                          key={item.id}
+                          className="list-row-item"
+                          onClick={() => setSelectedItem(item)}
+                        >
+                          <div className="list-media-thumb">
+                            <MenuItemImage
+                              productName={item.imageName}
+                              variantId={item.variantId}
+                              alt={item.name}
+                              className="list-thumb-img"
+                            />
                           </div>
-                          <div className="list-meta-row">
-                            {item.shelfLife ? (
-                              <span>{item.shelfLife} days shelf life</span>
-                            ) : (
-                              <span>Fresh Daily</span>
-                            )}
-                            <span>•</span>
-                            <span>{item.quantityType || 'unit'}</span>
-                          </div>
-                        </div>
 
-                        <div className="list-price-action" onClick={(e) => e.stopPropagation()}>
-                          <div className="list-price-text">
-                            <strong>{item.priceLabel}</strong>
-                            <small>
+                          <div className="list-info-main">
+                            <div className="list-title-row">
+                              <VegBadge />
+                              <h3 className="list-title">{item.name}</h3>
+                              {item.tag && <span className="list-tag">{item.tag}</span>}
+                            </div>
+                            <div className="list-meta-mobile">
+                              {item.shelfLife ? (
+                                <span>{item.shelfLife} days shelf life</span>
+                              ) : (
+                                <span>Fresh Daily</span>
+                              )}
+                              <span> • </span>
+                              <span>{item.quantityType || 'unit'}</span>
+                            </div>
+                          </div>
+
+                          <div className="list-meta-col">
+                            <span className="table-shelf-badge">
+                              <FontAwesomeIcon icon={faClock} />
+                              {item.shelfLife ? `${item.shelfLife} days` : 'Fresh Daily'}
+                            </span>
+                            <span className="table-unit-badge">
                               {item.quantityType?.toLowerCase() === 'kg'
-                                ? '/ kg'
+                                ? 'Per kg'
                                 : item.quantityType?.toLowerCase() === 'piece'
-                                ? '/ pc'
-                                : ''}
-                            </small>
+                                ? 'Per pc'
+                                : item.quantityType || 'unit'}
+                            </span>
                           </div>
 
-                          <a
-                            href={item.shopHref || SHOP_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="list-order-btn"
-                            title={`Order ${item.name} online`}
-                          >
-                            <span>Order</span>
-                            <FontAwesomeIcon icon={faExternalLinkAlt} />
-                          </a>
-                        </div>
-                      </article>
-                    ))}
+                          <div className="list-price-action" onClick={(e) => e.stopPropagation()}>
+                            <div className="list-price-text">
+                              <strong>{item.priceLabel}</strong>
+                              <small>
+                                {item.quantityType?.toLowerCase() === 'kg'
+                                  ? '/ kg'
+                                  : item.quantityType?.toLowerCase() === 'piece'
+                                  ? '/ pc'
+                                  : ''}
+                              </small>
+                            </div>
+
+                            <a
+                              href={item.shopHref || SHOP_URL}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="list-order-btn"
+                              title={`Order ${item.name} online`}
+                            >
+                              <span>Order</span>
+                              <FontAwesomeIcon icon={faExternalLinkAlt} />
+                            </a>
+                          </div>
+                        </article>
+                      ))}
+                    </div>
                   </div>
                 )}
               </section>

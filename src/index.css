@@ -1090,7 +1090,39 @@ a {
   box-shadow: 0 4px 12px rgba(140, 20, 25, 0.22);
 }
 
-/* 5B. COMPACT RATE LIST VIEW */
+/* 5B. TABLE / COMPACT RATE LIST VIEW */
+.items-table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.table-header-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(180px, 1fr) minmax(120px, auto) 100px;
+  align-items: center;
+  gap: 16px;
+  padding: 11px 20px;
+  border-radius: var(--radius-md);
+  background: var(--bg-cream);
+  border: 1px solid var(--line-gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--raj-red-deep);
+  box-shadow: var(--shadow-xs);
+}
+
+.th-price {
+  text-align: right;
+}
+
+.th-action {
+  text-align: right;
+}
+
 .items-list-view {
   display: flex;
   flex-direction: column;
@@ -1098,10 +1130,11 @@ a {
 }
 
 .list-row-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(180px, 1fr) minmax(120px, auto) 100px;
   align-items: center;
-  gap: 14px;
-  padding: 10px 16px;
+  gap: 16px;
+  padding: 10px 18px;
   border-radius: var(--radius-md);
   background: var(--bg-card);
   border: 1px solid var(--line-subtle);
@@ -1113,13 +1146,13 @@ a {
 .list-row-item:hover {
   border-color: var(--raj-gold);
   background: #fffdf9;
-  transform: translateX(3px);
+  transform: translateY(-1px);
   box-shadow: var(--shadow-sm);
 }
 
 .list-media-thumb {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background: #fbf5e8;
@@ -1133,7 +1166,9 @@ a {
 }
 
 .list-info-main {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   min-width: 0;
 }
 
@@ -1142,6 +1177,7 @@ a {
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .list-title {
@@ -1156,7 +1192,7 @@ a {
 }
 
 .list-tag {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
   text-transform: uppercase;
   padding: 2px 7px;
@@ -1166,21 +1202,47 @@ a {
   border: 1px solid rgba(201, 145, 29, 0.3);
 }
 
-.list-meta-row {
+.list-meta-mobile {
+  display: none;
+}
+
+.list-meta-col {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.table-shelf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-cream);
+  border: 1px solid var(--line-subtle);
   color: var(--ink-muted);
-  margin-top: 3px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.table-shelf-badge svg {
+  color: var(--raj-gold);
+}
+
+.table-unit-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: rgba(140, 20, 25, 0.05);
+  color: var(--raj-red);
+  font-size: 0.76rem;
+  font-weight: 700;
 }
 
 .list-price-action {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-shrink: 0;
+  display: contents;
 }
 
 .list-price-text {
@@ -1203,15 +1265,17 @@ a {
 .list-order-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   height: 34px;
-  padding: 0 13px;
+  padding: 0 12px;
   border-radius: var(--radius-full);
   background: var(--raj-red);
   color: #ffffff;
   font-size: 0.82rem;
   font-weight: 800;
   transition: all var(--transition-fast);
+  margin-left: auto;
 }
 
 .list-order-btn:hover {
@@ -2035,6 +2099,35 @@ a {
 
   .store-details-grid {
     grid-template-columns: 1fr;
+  }
+
+  .table-header-strip {
+    display: none;
+  }
+
+  .list-row-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+  }
+
+  .list-meta-col {
+    display: none;
+  }
+
+  .list-meta-mobile {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    margin-top: 3px;
+  }
+
+  .list-price-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
   }
 
   .item-modal-dialog {
